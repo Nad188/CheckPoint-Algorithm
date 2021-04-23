@@ -1,0 +1,36 @@
+ALGORITHM Counting a sentence 
+VAR
+    S:STRING;
+    char:C;
+    Nc:INTEGER:=0;
+    Nv:INTEGER:=0;
+    Nw:INTEGER:=1;
+    i:=0;
+BEGIN
+    Read(s)
+    WHILE (C<>'.') DO
+     Nc= Nc+1;
+     IF (C=' ') THEN
+         Nw = Nw + 1;
+    END_IF
+     IF (C='a' or C='A' C='e' or C='E' or C='u' or C='U' or C='i' or C='I' or C='o' or C='O' or C='y' or C='Y') THEN
+         Nv= Nv + 1;
+     END_IF
+    END_WHILE
+    write ('The number of characters' + Nc)
+    write ('The number of words is' + Nw)
+    write ('The number of vowels is' + Nv)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
